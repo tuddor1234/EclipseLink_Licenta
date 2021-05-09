@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="default">
+     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+     <class>com.company.Entities.Business</class>
+      <class>com.company.Entities.Sellable</class>
+      <class>com.company.Entities.Service</class>
+      <class>com.company.Entities.Product</class>
+
+
+      <properties>
+       <!-->  <property name="jakarta.persistence.jdbc.driver" value=""/>   <-->
+         <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://ormest-server.database.windows.net:1433;database=ORMTestLicenta;user=tudor@ormest-server;password=Tuddor_1234;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+"/>
+         <property name="jakarta.persistence.jdbc.user" value="tudor"/>
+         <property name="jakarta.persistence.jdbc.password" value="Tuddor_1234"/>
+         
+     </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="eclipselink">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/eclipselink.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/jpa/jakarta.annotation-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/jpa/jakarta.persistence-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/jpa/org.eclipse.persistence.jpa.modelgen.processor.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/jpa/org.eclipse.persistence.jpars.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/extension/org.eclipse.persistence.extension.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/extension/org.eclipse.persistence.nosql.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/extension/org.eclipse.persistence.oracle.nosql.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/jpa/org.eclipse.persistence.jpars-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/jpa/org.eclipse.persistence.jpa.modelgen.processor-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/jpa/org.eclipse.persistence.jpars-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/extension/org.eclipse.persistence.extension-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/extension/org.eclipse.persistence.nosql-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Java/Libraries/eclipselink/jlib/extension/org.eclipse.persistence.oracle.nosql-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
