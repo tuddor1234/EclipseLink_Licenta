@@ -8,11 +8,12 @@ import java.util.Set;
 import java.util.UUID;
 
 @Entity
-public class Business {
+@Table(name = "Business")
+public class Business  implements Serializable {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
-    private UUID ID;
+    private Long ID;
 
     public String getName() {
         return name;
@@ -77,14 +78,14 @@ public class Business {
         registration_number = registrationnumber;
     }
 
-    public void AddSellable(Sellable sellable)
-    {
-        if(sellable == null)
-            return;
-
-        sellables.add(sellable);
-        sellable.AddBusiness(this);
-    }
+//    public void AddSellable(Sellable sellable)
+//    {
+//        if(sellable == null)
+//            return;
+//
+//        sellables.add(sellable);
+//        sellable.AddBusiness(this);
+//    }
 
 
     @Override
@@ -97,6 +98,7 @@ public class Business {
                 ", Registration Number='" + registration_number +
                 "\'}";
     }
+
 
 
 }

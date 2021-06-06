@@ -3,17 +3,18 @@ package com.company.Entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Sellable {
+public abstract class Sellable  implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    protected UUID id;
+    protected Long id;
     protected String name = new String();
     protected String currency = new String();
     protected float price = -1;
@@ -23,7 +24,7 @@ public abstract class Sellable {
     Set<Business> businessesThatSellMe = new HashSet<>();
 
 
-    public UUID getId() {
+    public Long getId() {
         return id;
     }
 
@@ -97,7 +98,7 @@ public abstract class Sellable {
                 ", currency='" + currency + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +
-                ", businessesThatSellMe=" + businessesThatSellMe +
+             //   ", businessesThatSellMe=" + businessesThatSellMe +
                 '}';
     }
 }

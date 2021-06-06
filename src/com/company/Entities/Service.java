@@ -2,13 +2,15 @@ package com.company.Entities;
 
 import jakarta.persistence.Entity;
 
+import java.io.Serializable;
+
 @Entity
-public class Service extends Sellable{
+public class Service extends Sellable  implements Serializable {
 
     private float maxDistance = -1;
     private float duration = -1;
 
-    private Service()
+    public Service()
     {
         super();
     }
