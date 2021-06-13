@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
-import org.eclipse.persistence.jpa.PersistenceProvider;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -52,7 +51,6 @@ class Tests {
 
         assert (results.size() > 0);
     }
-
 
 
 }

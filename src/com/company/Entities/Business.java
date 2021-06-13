@@ -78,14 +78,14 @@ public class Business  implements Serializable {
         registration_number = registrationnumber;
     }
 
-//    public void AddSellable(Sellable sellable)
-//    {
-//        if(sellable == null)
-//            return;
-//
-//        sellables.add(sellable);
-//        sellable.AddBusiness(this);
-//    }
+    public void AddSellable(Sellable sellable)
+    {
+        if(sellable == null)
+            return;
+
+        sellables.add(sellable);
+        sellable.AddBusiness(this);
+    }
 
 
     @Override
